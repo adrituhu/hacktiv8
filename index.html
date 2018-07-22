@@ -73,7 +73,7 @@
                         <img style="width:100%;" src="news_images/<?php echo $rownews['images'];?>" class="news_image">
                     </div>
                     <p style="margin-left:10px;" class="news_synopsis"><?php echo substr($rownews['description'],0,250);?></p>
-                    <a href="#" class="link_detail">Read More</a>
+                    <a href="news_detail.php?id_news=<?php echo $rownews['id_news'];?>" class="link_detail">Read More</a>
                 </div>
                      <?php } while( $rownews = $qnews->fetch_assoc()); ?>
 
@@ -95,6 +95,7 @@
 </body>
 </html>
 
+<!---------------------------------------- END NEWS.PHP ---------------------------------> 
 <!---------------------------------------- NEWS DETAIL.PHP --------------------------------->  
 
 <!doctype html>
